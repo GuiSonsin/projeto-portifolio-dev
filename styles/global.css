@@ -23,17 +23,98 @@
     --font-family-maven: "Maven Pro", serif;
 }
 
-.title-lg{
+.title-lg-asap{
     font: 56px 120% bold;
     font-family: var(--font-family-asap);
 }
 
-.title-md{
+.title-md-asap{
     font: 24px 120% bold;
     font-family: var(--font-family-asap);
 }
 
-.title-sm{
+.title-sm-asap{
     font: 16px 120% bold;
     font-family: var(--font-family-asap);
 }
+
+.subtitle{
+    font-family: var(--font-family-incosolata);
+    font: 20px 120%;
+}
+
+.text-md-maven{
+    font: 16px 140%;
+    font-family: var(--font-family-maven);
+}
+
+.text-sm-maven{
+    font: 14px 140%;
+    font-family: var(--font-family-maven);
+}
+
+.container{
+    max-width: 1366px;
+    padding-inline: 80px;
+    margin-inline: auto;
+}
+
+body{
+    background-color: var(--gray-300);
+    color: var(--gray-500);
+}
+
+main{
+    div:nth-child(1) {
+        background-color: var(--gray-200);
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #job div{
+
+        p{
+            color: var(--red);
+            text-align: center;
+            padding-top: 72px;
+            padding-bottom: 8px;
+        }
+
+    }
+
+    #service div {
+        p{
+            color: var(--red);
+            text-align: center;
+            padding-top: 88px;
+            padding-bottom: 8px;
+        }
+        
+
+        background-color: var(--gray-100);
+    }
+
+    h4{
+        text-align: center;
+        padding-bottom: 56px;
+    }
+    
+#thumbnail{
+    
+    width: 1040px;
+    display: grid;
+
+    
+
+    div{
+        align-content: end;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+}
+}
+
