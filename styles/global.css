@@ -65,10 +65,7 @@ body{
 }
 
 main{
-    div:nth-child(1) {
-        background-color: var(--gray-200);
-        width: 100%;
-    }
+    padding-block: 80px;
 
     img{
         width: 100%;
