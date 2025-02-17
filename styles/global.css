@@ -25,6 +25,7 @@
 
 .title-lg-asap{
     font: 56px 120% bold;
+    color: var(--gray-600);
     font-family: var(--font-family-asap);
 }
 
@@ -35,6 +36,7 @@
 
 .title-sm-asap{
     font: 16px 120% bold;
+    color: var(--gray-600);
     font-family: var(--font-family-asap);
 }
 
@@ -50,6 +52,7 @@
 
 .text-sm-maven{
     font: 14px 140%;
+    color: var(--gray-500);
     font-family: var(--font-family-maven);
 }
 
@@ -66,52 +69,69 @@ body{
 
 main{
     padding-block: 80px;
-
+    background-color: var(--gray-200);
     img{
+        display: grid;
         width: 100%;
     }
 
-    #job div{
+    #job{
 
-        p{
+        .subtitle{
             color: var(--red);
             text-align: center;
             padding-top: 72px;
             padding-bottom: 8px;
         }
 
+        #thumb{
+            display: grid;
+            grid-template-columns: repeat(3, 330px);
+            grid-template-rows: repeat(2, 280px);
+            gap: 24px;
+            padding-bottom: 144px;
+            margin: 0px 84px 0px;
+
+            div{
+                border-radius: 12px;
+                background-color: var(--gray-300);
+            }
+
+            div:nth-child(1){
+                img{
+                    padding: 12px 12px 20px 12px;
+                    border-radius: 25px; 
+                }   
+
+                div{
+                    padding: 0px 4px 8px;
+
+                    p{
+                        padding: 0px 4px;
+                    }
+                }
+            }
+        }
+
     }
 
-    #service div {
-        p{
+    #service {
+        
+        background-color: var(--gray-100);
+
+        .subtitle{
             color: var(--red);
             text-align: center;
             padding-top: 88px;
             padding-bottom: 8px;
+            
         }
-        
-
-        background-color: var(--gray-100);
     }
 
-    h4{
+    h2{
         text-align: center;
         padding-bottom: 56px;
     }
     
-#thumbnail{
-    
-    width: 1040px;
-    display: grid;
-
-    
-
-    div{
-        align-content: end;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    
-}
 }
 
