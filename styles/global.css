@@ -70,8 +70,8 @@ body{
 main{
     padding-block: 80px;
     background-color: var(--gray-200);
+    
     img{
-        display: grid;
         width: 100%;
     }
 
@@ -97,23 +97,21 @@ main{
                 background-color: var(--gray-300);
             }
 
-            div:nth-child(1){
-                img{
-                    padding: 12px 12px 20px 12px;
-                    border-radius: 25px; 
-                }   
+            img{
+                padding: 12px 12px 20px 12px;
+                border-radius: 25px; 
+            }   
 
-                div{
-                    padding: 0px 4px 8px;
-
-                    p{
-                        padding: 0px 4px;
-                    }
-                }
+            div h3{
+                padding: 0px 16px 8px;  
             }
-        }
 
+            div p{
+                padding: 0px 16px;
+            }
     }
+
+}
 
     #service {
         
