@@ -24,36 +24,45 @@
 }
 
 .title-lg-asap{
-    font: 56px 120% bold;
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: bold;
     color: var(--gray-600);
     font-family: var(--font-family-asap);
 }
 
 .title-md-asap{
-    font: 24px 120% bold;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: bold;
     font-family: var(--font-family-asap);
 }
 
 .title-sm-asap{
-    font: 16px 120% bold;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: bold;
     color: var(--gray-600);
     font-family: var(--font-family-asap);
 }
 
 .subtitle{
     font-family: var(--font-family-incosolata);
-    font: 20px 120%;
+    font-size: 20px ;
+    line-height: 120%;
     color: var(--red);
 }
 
 .text-md-maven{
-    font: 16px 140%;
+    font-size: 16px;
+    line-height: 140%;
     font-family: var(--font-family-maven);
 
 }
 
 .text-sm-maven{
-    font: 14px 140%;
+    font-size: 14px;
+    line-height: 140%;
     color: var(--gray-500);
     font-family: var(--font-family-maven);
 }
@@ -78,14 +87,14 @@ main{
     }
 
     #job{
+        padding-bottom: 144px;
 
         header{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 8px;
-            padding: 72px 0 56px; 
-
+            padding: 72px 0px 56px; 
         }
 
         #thumb{
@@ -95,7 +104,7 @@ main{
             grid-template-rows: repeat(2, 280px);
             gap: 24px;
             padding-bottom: 144px;
-            margin: 0px 84px 0px;
+            padding: 0px 75px;
 
             section{
                 max-width: 330px;
@@ -117,7 +126,6 @@ main{
                 padding: 0px 16px;
             }
     }
-
 }
 
 #thumb {
@@ -130,13 +138,12 @@ main{
     section:hover{
         outline: 2px solid var(--gray-400);
     }
-    
 }
-
 
     #myService {
         background-color: var(--gray-100);
         padding-bottom: 120px;
+
         header{
             display: flex;
             gap: 8px;
@@ -146,26 +153,24 @@ main{
         }
 
         #service{
-            width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, 280px);
-            grid-auto-rows: 155px;
-            gap: 24px;
-            margin: 0px 239px ;
-
+            width: 100%;
             
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-rows: 155px;
+            gap: 24px;
+            padding: 0px 145px 0px;
 
             section{    
+                
                 border-radius: 12px;
                 outline: 1px solid var(--gray-200);
 
-                img:nth-child(1){
+                img{
                     margin: 20px;
                     width: 48px;
-                    filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(270deg);
+                    height: 48px;
                 }
-
-                
 
                 div h3{
                     padding: 0px 20px 8px;  
@@ -176,7 +181,5 @@ main{
                 }
             }
         }
-    }
-    
+    } 
 }
-
