@@ -92,7 +92,7 @@ main{
             padding-bottom: 144px;
             margin: 0px 84px 0px;
 
-            div{
+            section{
                 border-radius: 12px;
                 background-color: var(--gray-300);
             }
@@ -112,6 +112,20 @@ main{
     }
 
 }
+
+#thumb {
+    section{
+        transition: outline 0.4s ease-out;
+        outline: 2px solid var(--gray-300);
+        cursor: pointer;
+    }
+
+    section:hover{
+        outline: 2px solid var(--gray-400);
+    }
+    
+}
+
 
     #service {
         
