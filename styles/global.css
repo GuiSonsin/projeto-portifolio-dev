@@ -43,11 +43,13 @@
 .subtitle{
     font-family: var(--font-family-incosolata);
     font: 20px 120%;
+    color: var(--red);
 }
 
 .text-md-maven{
     font: 16px 140%;
     font-family: var(--font-family-maven);
+
 }
 
 .text-sm-maven{
@@ -77,22 +79,27 @@ main{
 
     #job{
 
-        .subtitle{
-            color: var(--red);
-            text-align: center;
-            padding-top: 72px;
-            padding-bottom: 8px;
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 72px 0 56px; 
+
         }
 
         #thumb{
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, 330px);
+            grid-template-columns: repeat(auto-fit, 330px);
             grid-template-rows: repeat(2, 280px);
             gap: 24px;
             padding-bottom: 144px;
             margin: 0px 84px 0px;
 
             section{
+                max-width: 330px;
+                min-width: 50px;
                 border-radius: 12px;
                 background-color: var(--gray-300);
             }
@@ -131,18 +138,13 @@ main{
         
         background-color: var(--gray-100);
 
-        .subtitle{
-            color: var(--red);
-            text-align: center;
-            padding-top: 88px;
-            padding-bottom: 8px;
-            
+        header{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-direction: column;
+            padding: 88px 0px 56px;
         }
-    }
-
-    h2{
-        text-align: center;
-        padding-bottom: 56px;
     }
     
 }
