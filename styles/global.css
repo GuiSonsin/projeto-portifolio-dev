@@ -329,37 +329,44 @@ main{
 
 
         .svg-icon-arrow{
-            width: 11px;
-            height: 11px;
+            display: flex;
+            align-self: anchor-center;
+            width: 13px;
+            height: 13px;
         }
 
-        .social-media{  
+        .social-media{
             position: absolute;
-            top: 55%;
+            width: 45%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-        }
+            transform: translate(-50%, -40%);
+            
+}
 
         .card-social-media{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 400px;
-            height: 68px;
+            display: flex; 
+            justify-content: space-between;
+
             background-color: var(--gray-300);
             border-radius: 8px;
+
             margin: 16px;
-            padding: 24px;
-            
-            
+            padding: 24px; 
+        }
+
+        .left-content {
+            display: flex;
+            gap: 12px;
+            align-items: center; 
         }
 
         .card-social-media:hover{ 
             outline: 1px solid var(--blue);
             cursor: pointer; 
-}   
+        }   
 
-}  
+    }  
 
     .link{
         text-decoration: none;
