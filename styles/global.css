@@ -235,7 +235,7 @@ main{
         transition: outline 0.4s ease-out;
         outline: 2px solid var(--gray-300);
         cursor: pointer;
-    }
+}
 
     section:hover{
         outline: 2px solid var(--gray-400);
@@ -350,11 +350,18 @@ main{
             border-radius: 8px;
             margin: 16px;
             padding: 24px;
-
+            
             
         }
-        
-    }
 
-    
+        .card-social-media:hover{ 
+            outline: 1px solid var(--blue);
+            cursor: pointer; 
+}   
+
+}  
+
+    .link{
+        text-decoration: none;
+    } 
 }
