@@ -286,8 +286,75 @@ main{
     } 
 
     #contact{
-        img{
-            width: 100%;
+        position: relative;
+        text-align: center;
+
+        .subtitle-2{
+            font-family: var(--font-family-incosolata);
+            font-size: 20px ;
+            line-height: 120%;
+            color: var(--gray-500);
+            padding-top: 8px;
         }
+
+        .subtitle-3{
+            font-family: var(--font-family-incosolata);
+            font-size: 20px ;
+            line-height: 120%;
+            color: var(--purple);
+            padding-bottom: 8px;
+        }
+
+        .header{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+
+        span img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .img-background{
+            width: 100%;
+            height: 787px;
+        }
+
+        .svg-icon-media{
+            width: 23px;
+            height: 23px;
+        }
+
+
+        .svg-icon-arrow{
+            width: 11px;
+            height: 11px;
+        }
+
+        .social-media{  
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card-social-media{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 400px;
+            height: 68px;
+            background-color: var(--gray-300);
+            border-radius: 8px;
+            margin: 16px;
+            padding: 24px;
+
+            
+        }
+        
     }
+
+    
 }
